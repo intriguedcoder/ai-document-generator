@@ -186,6 +186,15 @@ ai-document-generator/
 
 📹 **[Watch Demo Video](https://www.google.com/search?q=PLACEHOLDER_LINK)**
 
+
+## Deployment
+
+Backend API: `http://localhost:8000`  
+Frontend App: `http://localhost:5173`  
+
+The codebase is structured for deployment on common cloud platforms; however, since most providers require credit card verification even for free tiers, the application is currently demonstrated running locally.
+
+
 ## Challenges & Learnings
 
 ### Challenges Faced
