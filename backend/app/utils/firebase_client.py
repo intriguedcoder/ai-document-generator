@@ -2,6 +2,8 @@ import firebase_admin
 from firebase_admin import credentials, firestore
 from app.core.config import settings
 import logging
+import os
+import json
 
 logger = logging.getLogger(__name__)
 
@@ -20,7 +22,15 @@ class FirebaseClient:
     def _initialize_firebase(cls):
         """Initialize Firebase Admin SDK"""
         try:
-            cred = credentials.Certificate(settings.FIREBASE_CREDENTIALS_PATH)
+            creds_json = os.getenv("GOOGLE_APPLICATION_CREDENTIALS_JSON")
+
+            if creds_json:
+                # Production: Load from env variable (Render deployment)
+                cred = credentials.Certificate(json.loads(creds_json))
+            else:
+                # Local: Read from file path (from .env)
+                cred = credentials.Certificate(settings.FIREBASE_CREDENTIALS_PATH)
+            
             firebase_admin.initialize_app(cred)
             cls._db = firestore.client()
             logger.info("Firebase initialized successfully")
