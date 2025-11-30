@@ -184,7 +184,7 @@ ai-document-generator/
 
 ## Demo Video
 
-📹 **[Watch Demo Video](https://www.google.com/search?q=PLACEHOLDER_LINK)**
+📹 **[Watch Demo Video](https://drive.google.com/file/d/1iGJ_dpOQw4D2x74BYHmoHNNpNk4UpvS1/view?usp=sharing)**
 
 
 ## Deployment
