@@ -203,7 +203,7 @@ The application follows a client-server architecture:
 
 ## Project Structure
 
-
+```text
 ai-document-generator/
 ├── backend/
 │   ├── app/
@@ -241,7 +241,7 @@ ai-document-generator/
 │   ├── .env
 │   └── .gitignore
 └── README.md
-
+```
 
 ## Demo Video
 
