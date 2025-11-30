@@ -258,12 +258,12 @@ The demo video includes:
   - Version history and rollback
   - Export functionality demonstration
 
-## Deployment (Optional)
+## Deployment 
 
-If deployed, add URLs here:
+Backend API: http://localhost:8000
+Frontend App: http://localhost:5173
 
-  - **Backend API:** [Deployment URL]
-  - **Frontend App:** [Deployment URL]
+The codebase is structured for deployment on common cloud platforms; however, since most providers require credit card verification even for free tiers, the application is currently demonstrated running locally
 
 ## Challenges & Learnings
 
